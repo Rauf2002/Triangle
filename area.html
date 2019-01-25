@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=211, b=355, c=416
+    var p=a+b+c
+    
+    if(a+b > c){
+        area = Math.sqrt(p/2 * ((p/2)-a) * ((p/2)-b) * ((p/2)-c))
+        Radius = a*b*c/4/area
+        radius = 2*area/(p)
+        median = Math.sqrt(2 * (a*a + b*b)-c*c)/2
+        cosx = (c*c + b*b - a*a)/2/b/c
+        console.log("Sahə="+area)
+        console.log("Xaricə çəkilmiş çevrənin radiusu="+Radius)
+        console.log("Daxilə çəkilmiş çevrənin radiusu="+radius)
+        console.log("Kosinus x="+cosx)
+        console.log("Perimetr="+p)
+        
+
+    }
+      if(a+b<= c){
+     console.log("Üçbucaq bərabərsizliyi ödənməyib")   
+    }
+    if(a*a + b*b==c*c){
+        //Burada "a" kicik katet, b boyuk katet, c ise hipotenuzdur.
+        height = a*b/c
+        radius = (a + b -c)/2
+        Radius=c/2
+        area = a*b/2
+        sinx = a/c
+        tgx = a/b
+        ctgx = b/a
+
+        console.log(
+            "Bu düzbucaqlı üçbucaqdır")
+            console.log("Hipotenuza çəkilən hündürlük="+height)
+            console.log("Median="+median)
+            //x-i boyuk katete bitisik bir bucaq goturek
+            console.log("Sinus x="+sinx);
+            console.log("Tangens x ="+tgx);
+            console.log("Kotangens x="+ctgx)
+            
+
+        
+        
+    }
+    if(a==b){
+        console.log("Bu bərabəryanlı üçbucaqdır")
+        console.log("Median="+median)
+        
+    }
+    //B-yanli ile b-tereflinin qarismamagini muellimden sorus
+    if(a==b, b==c, a==c){
+        console.log("Birinci şərt ödənmir,bu bərabərtərəfli üçbucaqdır")
+    }
+
+    
+        
+        
+    
+    
+        
+    
+        
+    
+
+
+         
+        
+     
+
+
+    
+    
+
+    
+    </script>
+</body>
+</html>
