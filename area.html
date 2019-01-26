@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-    var a=211, b=355, c=416
+    var a=20, b=20, c=32
     var p=a+b+c
     
     if(a+b > c){
@@ -16,12 +16,14 @@
         Radius = a*b*c/4/area
         radius = 2*area/(p)
         median = Math.sqrt(2 * (a*a + b*b)-c*c)/2
+        height = 2* area/c
         cosx = (c*c + b*b - a*a)/2/b/c
         console.log("Sahə="+area)
         console.log("Xaricə çəkilmiş çevrənin radiusu="+Radius)
         console.log("Daxilə çəkilmiş çevrənin radiusu="+radius)
         console.log("Kosinus x="+cosx)
         console.log("Perimetr="+p)
+        console.log("Hündürlük="+height)
         
 
     }
@@ -30,7 +32,7 @@
     }
     if(a*a + b*b==c*c){
         //Burada "a" kicik katet, b boyuk katet, c ise hipotenuzdur.
-        height = a*b/c
+        
         radius = (a + b -c)/2
         Radius=c/2
         area = a*b/2
@@ -51,14 +53,14 @@
         
         
     }
-    if(a==b){
+    if(a==b, c != b){
         console.log("Bu bərabəryanlı üçbucaqdır")
         console.log("Median="+median)
         
     }
     //B-yanli ile b-tereflinin qarismamagini muellimden sorus
     if(a==b, b==c, a==c){
-        console.log("Birinci şərt ödənmir,bu bərabərtərəfli üçbucaqdır")
+        console.log("Bu bərabərtərəfli üçbucaqdır")
     }
 
     
